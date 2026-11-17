@@ -1,0 +1,4 @@
+document.querySelectorAll(".menu-toggle").forEach(b=>b.addEventListener("click",()=>document.querySelector(".topbar nav")?.classList.toggle("open")));
+document.querySelectorAll(".order-btn").forEach(b=>b.addEventListener("click",()=>alert("Thanks for choosing the "+b.dataset.plan+" plan! Orders are disabled in this free preview. Connect a live server node and secure payment system before accepting customers.")));
+document.querySelectorAll(".demo-action").forEach(b=>b.addEventListener("click",()=>alert("Demo only: connect this client dashboard to Pterodactyl before enabling server controls.")));
+document.querySelector("#demo-login")?.addEventListener("submit",e=>{e.preventDefault();alert("Demo login only. No account or password is stored. Opening dashboard preview.");location.href="dashboard.html";});
